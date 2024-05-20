@@ -1,14 +1,19 @@
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { comments, sliderSettings } from "../../utils/data";
-import "./Testimonial.css";
-import {motion} from "framer-motion"
 import { footerVariants } from "../../utils/motion";
+import "./Testimonial.css";
 
 const Testimonial = () => {
   return (
     <section className="testimonial-area">
       <a className="anchore" id="testimonials"></a>
-      <motion.div className="container padding-top-bottom testimonial" variants={footerVariants} initial="hidden" whileInView="show">
+      <motion.div
+        className="container padding-top-bottom testimonial"
+        variants={footerVariants}
+        initial="hidden"
+        whileInView="show"
+      >
         <div className="testimonial-top">
           <h1 className="testimonial-title">People talk about us</h1>
           <p>
@@ -26,8 +31,8 @@ const Testimonial = () => {
                     <img src={comment.img} alt="image" />
                     <p className="testimonial-comment">{comment.comment}</p>
                     <div className="divider"></div>
-                    <p>{comment.name}</p>
-                    <p>{comment.post}</p>
+                    <p className="client-name">{comment.name}</p>
+                    <p className="client-post">{comment.post}</p>
                   </div>
                 </div>
               );
