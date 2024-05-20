@@ -8,5 +8,4 @@ This is a developer portfolio project. Where every section described a developer
 - Framer motion
 - React icon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Click here to check the live project](https://vinis-portfolio.vercel.app/) 
