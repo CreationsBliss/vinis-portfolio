@@ -1,0 +1,82 @@
+.hero-area {
+  background-color: var(--gray-bg);
+  position: relative;
+  overflow: hidden;
+}
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hero-top h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-top p {
+  line-height: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.hero-bottom {
+  margin-top: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-bottom-left-text {
+  display: flex;
+  align-items: center;
+}
+.ten-year {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.hero-bottom-left-text span {
+  display: flex;
+  justify-content: space-between;
+}
+.years-experience {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.hero-bottom-right-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-bottom-right-text img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+.hero-area-person {
+  background-image: url(../../assets/splash.png);
+  background-repeat: no-repeat;
+  background-size: 23rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 33%;
+}
+
+@media (max-width: 768px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hero-bottom {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-area-person {
+    position: relative;
+    left: 0;
+    background-size: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+  }
+}

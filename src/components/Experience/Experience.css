@@ -1,0 +1,71 @@
+.experience-area {
+  background-color: var(--gray-bg);
+  overflow: hidden;
+}
+.experience-area-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.experience-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.experience-detail-left{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.experience-detail-right{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.experience-sub-title{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.experience-sub-text{
+  line-height: 40px;
+}
+.experience{
+  position: relative;
+}
+.progressbar{
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  left: 45%;
+  top: 35px;
+}
+.line{
+  position: absolute;
+  height: 92%;
+  width: 2px;
+  background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 30px;
+  background-repeat: repeat-y;
+  border-radius: 5px;
+  left: 48%;
+  z-index: 1;
+}
+.circle-box{
+  flex: 1;
+  z-index: 2;
+}
+.circle{
+  width: 1.3rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
