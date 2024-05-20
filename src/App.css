@@ -18,9 +18,9 @@
   font-family: var(--fonts);
   color: var(--primary);
 }
-/* body{
-  overflow: hidden;
-} */
+body{
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;

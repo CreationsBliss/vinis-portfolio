@@ -3,23 +3,22 @@ import { useState } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import useHeaderShadow from "../../hooks/useHeaderShadow";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import "./Header.css";
-import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
-  const headerShadow = useHeaderShadow()
+  const headerShadow = useHeaderShadow();
   return (
-    <motion.section
-      className="header-area"
-      initial="hidden"
-      whileInView="show"
-      variants={headerVariants}
-      viewport={{ once: false, amount: 0.25 }}
-      style={{boxShadow: headerShadow}}
-    >
-      <div className="container header">
+    <section className="header-area" style={{ boxShadow: headerShadow }}>
+      <motion.div
+        className="container header"
+        initial="hidden"
+        whileInView="show"
+        variants={headerVariants}
+        viewport={{ once: false, amount: 0.25 }}
+      >
         <div className="logo">
           <a href="#">ViNi</a>
         </div>
@@ -56,8 +55,8 @@ const Header = () => {
         >
           {menuOpened ? <IoClose size={30} /> : <HiOutlineMenuAlt3 size={30} />}
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 
