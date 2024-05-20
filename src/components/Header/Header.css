@@ -1,7 +1,9 @@
 .header-area {
   background-color: var(--gray-bg);
   padding: 2rem 0;
+  overflow-x: hidden;
 
+  
   position: sticky;
   top: 0;
   z-index: 999999;
@@ -66,7 +68,7 @@
     align-items: start;
   }
 
-  .menu{
+  .menu {
     overflow-x: hidden;
   }
   .menu-items {
