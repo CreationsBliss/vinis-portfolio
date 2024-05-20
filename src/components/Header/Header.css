@@ -66,18 +66,7 @@
     align-items: start;
   }
   .menu-items {
-    flex-direction: column;
-    background-color: var(--pure-white);
-    border-radius: 10px;
-    padding: 2rem;
-    justify-content: flex-start;
-    align-items: start;
-    box-shadow: 0 4px 4px #0000000d;
-    position: absolute;
-    right: 3%;
-    top: 5rem;
-    transition: all 0.3s ease;
-    z-index: 999999;
+    display: none;
   }
   .header-menu-icon {
     display: block;
